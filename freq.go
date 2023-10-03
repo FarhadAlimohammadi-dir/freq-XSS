@@ -42,7 +42,7 @@ func main(){
 	      			fmt.Println(err)
 	   			}
 	   			sb := string(body)
-	   			check_result := strings.Contains(sb , "alert(1)")
+	   			check_result := strings.Contains(sb , "onload=alert(5)")
 	   			// fmt.Println(check_result)
 	   			if check_result != false {
 	   				fmt.Println(string(colorRed),"XSS FOUND:", domain,string(colorReset))
