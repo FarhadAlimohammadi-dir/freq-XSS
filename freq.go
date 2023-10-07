@@ -42,7 +42,7 @@ func main(){
 	      			fmt.Println(err)
 	   			}
 	   			sb := string(body)
-	   			check_result := strings.Contains(sb , "<script/src=//Ǌ.₨></script>")
+	   			check_result := strings.Contains(sb , "onclick=alert(1)")
 	   			// fmt.Println(check_result)
 	   			if check_result != false {
 	   				fmt.Println(string(colorRed),"XSS FOUND:", domain,string(colorReset))
